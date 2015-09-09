@@ -1,0 +1,19 @@
+
+@startuml
+	title My internal model
+
+	class com.zz.model.Campaign 
+	class com.zz.model.Room 
+	class com.zz.model.Measure {
+		mTimestamp
+	}
+	class com.zz.model.OneWifiMeasure
+
+	com.zz.model.Campaign "1" *-- "many" com.zz.model.Room
+	com.zz.model.Room "1" *--  "many" com.zz.model.Measure
+	com.zz.model.Measure "1" *--  "many" com.zz.model.OneWifiMeasure
+
+	legend
+		new : adding field
+	endlegend
+@enduml

@@ -1,0 +1,15 @@
+
+@startuml
+	title My internal model
+
+	class com.zz.model.Campaign 
+	class com.zz.model.Room 
+	class com.zz.model.Measure
+	class com.zz.model.OneWifiMeasure
+
+	com.zz.model.Campaign *-- com.zz.model.Room
+
+	legend
+		new : adding one constraint
+	endlegend
+@enduml
