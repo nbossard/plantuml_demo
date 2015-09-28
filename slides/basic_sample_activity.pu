@@ -1,0 +1,13 @@
+@startuml
+(*) --> "Initialization"
+
+if "un Test" then
+  -->[vrai] "Some Activity"
+  --> "Another activity"
+  -right-> (*)
+else
+  ->[faux] "Something else"
+  -->[Ending process] (*)
+endif
+
+@enduml
