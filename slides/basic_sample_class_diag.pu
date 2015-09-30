@@ -1,0 +1,8 @@
+
+@startuml
+
+	Campaign "1" *-- "many" Room
+	Room "1" *--  "many" Measure
+	Measure "1" *--  "many" OneWifiMeasure
+
+@enduml
