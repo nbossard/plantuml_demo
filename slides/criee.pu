@@ -1,0 +1,6 @@
+@startuml
+developpeur --> (doc dans le code) : écrit et maintient
+po --> (doc dans le code) : écrit et relit
+(doc dans le code) --> testeur : utilise une doc à jour
+
+@enduml
