@@ -1,12 +1,10 @@
 
 @startuml
 	title My internal model
+
 	class com.zz.model.Campaign 
-	
 	class com.zz.model.Room 
-	
-    class com.zz.model.Measure
-	
+	class com.zz.model.Measure
 	class com.zz.model.OneWifiMeasure
 
 @enduml

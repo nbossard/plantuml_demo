@@ -1,9 +1,0 @@
-
-@startuml
-
-	class com.orange.mylivebox.fr.homelan.model.Campaign 
-	class com.orange.mylivebox.fr.homelan.model.Room 
-	class com.orange.mylivebox.fr.homelan.model.Measure
-	class com.orange.mylivebox.fr.homelan.model.OneWifiMeasure
-
-@enduml
