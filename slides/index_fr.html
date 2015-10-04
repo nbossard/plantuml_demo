@@ -48,31 +48,61 @@
 						<small>Presentation créée par Nicolas Bossard (SOFT) pour le dev/test day<br>
 						<a href="https://github.com/nbossard/plantuml_demo">Slides</a></small><br>
 						09 sept 2015
-						
 					</p>
 				</section>
-				
+
 				<section>
-					<h2>Pour quoi faire</h2>
+					<h1>Disclaimer</h1>
+					<span class="fragment">Je suis un développeur, utilisateur de l'UML à des fins pratiques pour faire passer un message ou une connaissance de l'appli... <br></span>
+					<span class="fragment">pas un gourou de l'UML, mes schémas ci-après, ne sont donc surement pas éxempts d'entorses à la norme. </span>
+				</section>
+
+				<section>
+					<h1>A l'origine</h1>
+					<section>La séquence de démarrage de MaLivebox<br></section>
+					<section>une procédure complexe avec de nombreuses étapes (interactions SI, utilisateur, Livebox...) évoluant en permanence<br></section>
+					<section>Javadoc insuffisante, description textuelle longue imposible à maintenir... nécessité de faire un schéma<br><br></section>
+					<section>Utilisation de TODO... <br><br></span>
+						<span class="fragment">un échec : 
+							<ul>
+							<li> un outil en ligne extrèmement instable, </li>
+							<li>un schéma moche, </li>
+							<li>pas d'adhésion des autres développeurs</li>
+						</ul>
+						</span>
+					</section>
+					<section>
+						La solution...
+						<span class="fragment">quitter le projet Ma Livebox<br></span>
+						<span class="fragment">mais un an plus tard...plantUML</span>
+					</section>
+				</section>
+
+				<section>
+					<h2>PlantUML Pour quoi faire</h2>
 					<p>
-						générer des diagrammes UML à partir de descriptions textuelles que vous pouvez inclure dans votre code
+						<span class="fragment">générer des diagrammes UML à partir de descriptions textuelles que vous pouvez inclure dans votre code<br/></span>
+						<span class="fragment">éviter de s'appuyer sur des logiciels payants (visio, entreprise architect), peu répandus (dia), ou vieillissants (bouml),mais surtout extenes au source, et que donc on ouvre rarement ou jamais</span>
 					</p>
 				</section>
-				
+
+				<section>
+					TODO copie IDE mixan code et PLANTUML
+				</section>
+
 				<section>
 					<h2>Capacités de PlantUML</h2>
 				</section>
 				<section>
-					TODO copie IDE mixan code et PLANTUML
 					<section>
 						<h3>diagramme de séquence</h3>
-						<iframe src="basic_sample_sequence.pu" style="background: #FFFFFF;"></iframe>
-						<img src="basic_sample_sequence.png"/>
+						<iframe src="basic_sample/basic_sample_sequence.pu" style="background: #FFFFFF;"></iframe>
+						<img src="basic_sample/basic_sample_sequence.png"/>
 					</section>
 					<section>
 						<h3>diagramme de classe</h3>
-						<iframe src="basic_sample_class_diag.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
-						<img src="basic_sample_class_diag.png"/>
+						<iframe src="basic_sample/basic_sample_class_diag.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						<img src="basic_sample/basic_sample_class_diag.png"/>
 					</section>
 					<section>
 						<h3>diagramme de cas d'utilisation</h3>
@@ -81,11 +111,20 @@
 					</section>
 					<section>
 						<h3>diagramme d'activité</h3>
-						<iframe src="basic_sample_activity.pu" style="background: #FFFFFF;" height="250" width="400"></iframe>
-						<img src="basic_sample_activity.png"/>
+						<iframe src="basic_sample/basic_sample_activity.pu" style="background: #FFFFFF;" height="250" width="400"></iframe>
+						<img src="basic_sample/basic_sample_activity.png"/>
 					</section>
 				</section>
-				
+
+				<section>
+					<h2>Mais aussi...</h2>
+					<section>
+						<h3>diagramme de séquence</h3>
+						<iframe src="basic_sample/basic_sample_sequence.pu" style="background: #FFFFFF;"></iframe>
+						<img src="basic_sample/basic_sample_sequence.png"/>
+					</section>
+				</section>
+
 				<section>
 					<h2>Exemple d'utilisation dans nos projets</h2>
 					<small> BoxWidgets, Fast content Download, Homelan, Mooc</small>
