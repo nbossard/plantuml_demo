@@ -1,0 +1,17 @@
+@startuml
+title Process running at fragment start
+|OptWifiWelcomeFragment|
+start
+:displayNotYetReadyForTestOnUIThread;
+|#AntiqueWhite|OptWifiActivity|
+:launch retrieval of livebox SSIDS;
+if (success) then (yes)
+    |OptWifiWelcomeFragment|
+    :displayReadyForTestOnUIThread
+    (bottom button unlocked);
+else (no)
+    :displayFailedPreparingOnUIThread
+    (bottom button locked);
+endif
+end
+@enduml
