@@ -1,0 +1,18 @@
+
+@startuml
+	title My internal model
+
+	!include sample_class_diag_11measure.pu
+	hide methods
+	hide members
+
+	class com.zz.model.Campaign 
+	class com.zz.model.Room 
+
+	com.zz.model.Campaign "1" *-- "many" com.zz.model.Room
+	com.zz.model.Room "1" *--  "many" com.zz.model.Measure
+
+	legend
+		new : using hide 
+	endlegend
+@enduml
