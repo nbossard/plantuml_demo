@@ -1,0 +1,5 @@
+@startuml
+	start
+	:launch retrieval of livebox SSIDS;
+	end
+@enduml

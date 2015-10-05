@@ -1,0 +1,11 @@
+@startuml
+	title Process running at fragment start
+
+	start
+	:launch retrieval of livebox SSIDS;
+	end
+
+	legend
+		new : adding a title and a legend
+	endlegend
+@enduml

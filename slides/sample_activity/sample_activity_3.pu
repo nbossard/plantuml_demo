@@ -1,17 +1,20 @@
 @startuml
 title Process running at fragment start
+
 |OptWifiWelcomeFragment|
 start
 :displayNotYetReadyForTestOnUIThread;
-|#AntiqueWhite|OptWifiActivity|
+|OptWifiActivity|
 :launch retrieval of livebox SSIDS;
 if (success) then (yes)
-    |OptWifiWelcomeFragment|
-    :displayReadyForTestOnUIThread
-    (bottom button unlocked);
+	|OptWifiWelcomeFragment|
+	:displayReadyForTestOnUIThread;
 else (no)
-    :displayFailedPreparingOnUIThread
-    (bottom button locked);
+	:displayFailedPreparingOnUIThread;
 endif
 end
+
+	legend
+		new : adding swimlane
+	endlegend
 @enduml

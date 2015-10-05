@@ -1,0 +1,16 @@
+@startuml
+	title Process running at fragment start
+
+	start
+	:launch retrieval of livebox SSIDS;
+	if (success) then (yes)
+		:displayReadyForTestOnUIThread;
+	else (no)
+		:displayFailedPreparingOnUIThread;
+	endif
+	end
+
+	legend
+		new : adding a test
+	endlegend
+@enduml
