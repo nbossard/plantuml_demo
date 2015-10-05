@@ -1,0 +1,14 @@
+ 
+Bonjour
+
+Nicolas Bossard, développeur à SOFT sur applications mobiles
+
+Vous présenter un outil permettant l'écriture facile de schéma sous forme textuelle 
+que les développeurs peuvent include directement dans le code.
+PlantUML
+
+Grace à cet outil les schémas écrits par les Products owner sont maintenus par les développeurs, 
+	les points critiques de specs sont à jour
+	ça profite à tout le monde : nouveaux venus, testeurs...
+
+Venez nombreux cet après-midi à 16h ADM 141
