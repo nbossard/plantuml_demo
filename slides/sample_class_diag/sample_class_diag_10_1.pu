@@ -1,5 +1,10 @@
 
 @startuml
+	title My internal model
+
+
+	class com.zz.model.Campaign 
+	class com.zz.model.Room 
 	package com.zz.model.measure {
 		class com.zz.model.measure.Measure {
 			mTimestamp
@@ -8,6 +13,8 @@
 		class com.zz.model.measure.OneWifiMeasure
 	}
 
+	com.zz.model.Campaign "1" *-- "many" com.zz.model.Room
+	com.zz.model.Room "1" *--  "many" com.zz.model.measure.Measure
 	com.zz.model.measure.Measure "1" *--  "many" com.zz.model.measure.OneWifiMeasure
 
 
@@ -15,4 +22,7 @@
 	com.zz.model.Room .. com.zz.model.Note
 	com.zz.model.Note .. com.zz.model.measure.Measure
 
+	legend
+		new : making sub-package
+	endlegend
 @enduml

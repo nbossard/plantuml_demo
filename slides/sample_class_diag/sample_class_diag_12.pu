@@ -10,7 +10,7 @@
 	class com.zz.model.Room 
 
 	com.zz.model.Campaign "1" *-- "many" com.zz.model.Room
-	com.zz.model.Room "1" *--  "many" com.zz.model.Measure
+	com.zz.model.Room "1" *--  "many" com.zz.model.measure.Measure
 
 	legend
 		new : using hide 

@@ -3,6 +3,7 @@
 	title My internal model
 
 	!include sample_class_diag_11measure.pu
+	hide com.zz.model.measure.OneWifiMeasure
 
 	class com.zz.model.Campaign 
 	class com.zz.model.Room 
@@ -11,6 +12,6 @@
 	com.zz.model.Room "1" *--  "many" com.zz.model.measure.Measure
 
 	legend
-		new : using include preprocessor
+		new : using hide on class
 	endlegend
 @enduml
