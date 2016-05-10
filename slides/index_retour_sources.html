@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Plantuml, doc dans code</title>
+
+		<meta name="description" content="Plantuml, mettez la doc dans votre code">
+		<meta name="author" content="Nicolas BOSSARD">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			
+				<section>
+					<h1>UML et PlantUML</h1>
+					<h3>Mettez la documentation dans votre code</h3>
+					<p>
+						<small>Presentation créée par Nicolas Bossard (SOFT) dans le cadre du parcours "retour au sources"<br>
+						<a href="https://github.com/nbossard/plantuml_demo">Slides</a></small><br>
+						10 mai 2016
+					</p>
+				</section>
+
+				<section>
+					<h1>Disclaimer</h1>
+					<span class="fragment">Je suis un développeur, utilisateur de l'UML à des fins pratiques pour faire passer un message ou une connaissance de l'appli... <br></span>
+					<span class="fragment">pas un gourou de l'UML, mes schémas ci-après, ne sont donc surement pas éxempts d'entorses à la norme. </span>
+				</section>
+
+				<section data-background="#0000AA">
+					<h1>Rappels sur UML</h1>
+					<section>
+						<p>Unified Modeling Language</p>
+						<span class="fragment"><p>un standard</p></span>
+						<span class="fragment"><p>de l'OMG (Object Management Group)</p></span>
+					</section>
+					<section>
+						<span class="fragment"><p>Pourquoi Unified ?</p></span>
+						<span class="fragment">
+							Fusion des méthodes les plus célèbres
+							<ul>
+							<li>La méthode OMT de Rumbaugh</li>
+							<li>La méthode BOOCH'93 de Booch</li>
+							<li>La méthode OOSE de Jacobson (Object Oriented Software Engineering)</li>
+							</ul>
+						</span>
+					</section>
+					<section>
+						<span class="fragment"><p>Modeling language ?</p></span>
+						<span class="fragment">modéliser un problème de façon standard, </span>
+						<span class="fragment">indépendamment du language cible, </span>
+					</section>
+					<section>
+						UML fournit plusieurs types de diagramme pour représenter la composition du système et son fonctionnement.
+					</section>
+					<section>
+						Pour quoi faire?
+						<span class="fragment">modéliser le prb dans le cadre d'une relation client fournisseur</span>
+					</section>
+				</section>
+
+				<section>
+					<h1>A l'origine</h1>
+					<section>La séquence de démarrage de MaLivebox<br></section>
+					<section>une procédure complexe avec de nombreuses étapes (interactions SI, utilisateur, Livebox...) évoluant en permanence<br></section>
+					<section>Javadoc insuffisante, description textuelle longue imposible à maintenir... nécessité de faire un schéma<br><br></section>
+					<section>Utilisation de yuml <br><small>(http://www.yuml.me/diagram/scruffy/activity/draw)</small><br></span>
+						<span class="fragment">un échec : 
+							<ul>
+							<li> un outil en ligne extrèmement instable, </li>
+							<li>un schéma moche, </li>
+							<li>pas d'adhésion des autres développeurs</li>
+						</ul>
+						</span>
+					</section>
+					<section>
+						La solution...
+						<span class="fragment">quitter le projet Ma Livebox<br></span>
+						<span class="fragment">mais un an plus tard...plantUML</span>
+					</section>
+				</section>
+
+				<section>
+					<h2>PlantUML Pour quoi faire</h2>
+					<p>
+						<span class="fragment">générer des diagrammes UML à partir de descriptions textuelles que vous pouvez inclure dans votre code<br/></span>
+						<span class="fragment">éviter de s'appuyer sur des logiciels payants (visio, entreprise architect), peu répandus (dia), ou vieillissants (bouml),mais surtout extenes au source, et que donc on ouvre rarement ou jamais</span>
+				</section>
+				<section>
+						<h2>Tarifs...</h2>
+						<spann class="fragment">open source GPL</span><br>
+						<span class="fragment"><br> développement continu : bi-mensuel,<br> depuis 2009 (actuellement v8031... sic)</span>
+					</p>
+				</section>
+
+				<section>
+					<img src="plantuml_in_code.png"/>
+				</section>
+
+				<section>
+					<h2>Capacités de PlantUML</h2>
+				</section>
+				<section>
+					<section>
+						<h3>diagramme de séquence</h3>
+						<iframe src="basic_sample/basic_sample_sequence.pu" style="background: #FFFFFF;"></iframe>
+						<img src="basic_sample/basic_sample_sequence.png"/>
+					</section>
+					<section data-background="#0000AA">
+						<h3>Rappel sur le diagramme de séquence</h3>
+						<img src="basic_sample/basic_sample_sequence.png"/>
+						<span class="fragment">Collaboration entre objets/acteurs en colonne</span>
+						<span class="fragment">Chronologiquement (verticalement)</span>
+						<span class="fragment">Ex plus détaillé ultérieurement</span>
+					</section>
+					<section>
+						<h3>diagramme de classe</h3>
+						<iframe src="basic_sample/basic_sample_class_diag.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						<img src="basic_sample/basic_sample_class_diag.png"/>
+					</section>
+					<section>
+						<h3>diagramme de cas d'utilisation</h3>
+						<iframe src="criee.pu" style="background: #FFFFFF;"></iframe>
+						<img src="criee.png"/>
+					</section>
+					<section>
+						<h3>diagramme d'activité</h3>
+						<iframe src="basic_sample/basic_sample_activity.pu" style="background: #FFFFFF;" height="250" width="400"></iframe>
+						<img src="basic_sample/basic_sample_activity.png"/>
+					</section>
+				</section>
+
+				<section>
+					<h2>Mais aussi...</h2>
+					<section>
+						<h3>diagramme wireframe</h3>
+						<iframe src="basic_sample/basic_sample_wireframe.pu" style="background: #FFFFFF;"></iframe>
+						<img src="basic_sample/basic_sample_wireframe.png"/>
+					</section>
+					<section>
+						Diagrammes de composants<br>
+						Diagramme de déploiement<br>
+						Diagramme d'état<br>
+						Diagramme d'objet<br>
+					</section>
+				</section>
+
+				<section>
+					<h2>Exemple d'utilisation dans nos projets</h2>
+					<small> BoxWidgets, Fast content Download, Homelan, Mooc</small>
+				</section>
+				<section>
+					<section>
+						<h3>diagrammes de sequence</h3>
+						<img src="real_samples/metadata_extraction.png"/>
+					</section>
+					<section>
+						<h3>Algorithmes</h3>
+						<p>Pour les algos que vous ne cessez de réexpliquer ou pour le reverse engineering</p>
+						<img src="real_samples/algorithm_splash.png"/>
+					</section>
+					<section>
+						<h3>Algorithmes (ex. 2)</h3>
+						<img src="real_samples/algorithm_swim_lane.png"/>
+					</section>
+					<section>
+						<h3>Enchainement des écrans</h3>
+						<img src="real_samples/screens.png"/>
+					</section>
+					<section>
+						<h3>Diagrammes de classe</h3>
+						<img src="real_samples/package-info.png"/>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Utilisation</h2>
+				</section>
+				<section>
+					<section>
+						<h3>Utilisation du jar plantuml</h3>
+						<p><img src="plantuml_jar.png"/></p>
+						<p>double click (windows) ou (linux) java -jar plantuml.jar</p>
+					</section>
+					<section>
+						<h3>Directement dans l'IDE (via un plugin)</h3>
+						<p><img src="plantuml_as.png"/></p>
+					</section>
+					<section>
+						<h3>Sur l'Internet</h3>
+						Pour des test rapides
+						<small><a href="http://www.planttext.com/planttext" target="_blank">http://www.planttext.com/planttext</a> <img src="plantuml_web.png"/></small>
+					</section>
+					<section>
+						<h3>Sur l'Intranet</h3>
+						<small><a href="http://plantuml-etherpad.kermit.rd.francetelecom.fr/" target="_blank">http://plantuml-etherpad.kermit.rd.francetelecom.fr/</a></small>
+						<small>Merci à Matthieu SALVAT (présent sur Rennes pour les dev et test days)</small>
+						<img src="plantuml_intranet.png"/>
+					</section>
+					<section>
+						<h3>Dans la chaine d'intégration continue (jenkins)</h3>
+					</section>
+					<section>
+						<h3>via une application Android...</h3>
+						<p><img src="plantuml_android.png"/></p>
+					</section>
+					<section>
+						Bref des dizaines de manière d'utiliser plantuml... <br>
+						90 à ce jour sur 
+						<a href= "http://fr.plantuml.com/running.html">http://fr.plantuml.com/running.html</a>
+					</section>
+				</section>
+				
+				<section>
+					<h2>Installation</h2>
+					<p>Attention le jar repose sur graphviz</p>
+					<a href="http://graphviz.org/Download..php">http://graphviz.org/Download..php</a>
+				</section>
+
+				
+				<section>
+					<h2>DEMO</h2>
+					<p> utilisation du plantuml.jar</p>
+					<span class="fragment">
+						<small> Noter que l'image générée a le même nom que le fichier d'origine sauf si l'on précise</small>
+						<pre><code>
+@startuml image.png
+	...
+@enduml
+						</code></pre>
+					</span>
+				</section>
+
+				<section>
+					<h2>Retours d'usage en vrac</h2>
+					<p> 
+					<span class="fragment">La syntaxe est facile à appréhender et tolérante, on se bat assez peu contre l'outil<br></span>
+					<span class="fragment">Les graphes générés sont lisibles... parce qu'ils sont écrits manuellement et donc orientés pour faire passer un message<br></span>
+					<span class="fragment">La doc sur <a href="http://plantuml.com/">http://plantuml.com/</a> est très complète, en français (bien que d'aspect vieillotte)</span>
+					<span class="fragment">et les manques éventuels se trouvent facilement dans les forums</a>
+				</section>
+
+				<section>
+					<h2>Retours d'usage en vrac (suite)</h2>
+					<span class="fragment">Pour les plus (grands) diagrammes de classes, utilisation des instruction include et hide<br></span>
+					<span class="fragment">Ne pas trop essayer de gérer la mise en forme, ça résoud des probs temporairement... mais perturbe l'évolution</span>
+				</section>
+
+				<section>
+					<h2>exemple<br>écriture diag d'activité</h2>
+				</section>
+				<section>
+					<section>
+						<img src="sample_activity/sample_activity_0.png"/>
+						<span class="fragment">
+							<iframe src="sample_activity/sample_activity_0.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_activity/sample_activity_1.png"/>
+						<span class="fragment">
+							<iframe src="sample_activity/sample_activity_1.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_activity/sample_activity_2.png"/>
+						<span class="fragment">
+							<iframe src="sample_activity/sample_activity_2.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_activity/sample_activity_3.png"/>
+						<span class="fragment">
+							<iframe src="sample_activity/sample_activity_3.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_activity/sample_activity_4.png"/>
+						<span class="fragment">
+							<iframe src="sample_activity/sample_activity_4.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+				</section>
+
+				<section>
+					<h2>exemple<br>écriture diag de classe</h2>
+				</section>
+				<section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_1.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_1.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_2.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_2.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_3.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_3.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_4.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_4.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_5.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_5.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_5_err.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_5_err.pu" style="background: #FFFFFF;" height="400" width="400"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_6.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_6.pu" style="background: #FFFFFF;" height="400" width="500"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_7.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_7.pu" style="background: #FFFFFF;" height="400" width="500"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_8.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_8.pu" style="background: #FFFFFF;" height="400" width="500"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_9.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_9.pu" style="background: #FFFFFF;" height="400" width="500"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_10.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_10.pu" style="background: #FFFFFF;" height="500" width="500"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_10_1.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_10_1.pu" style="background: #FFFFFF;" height="500" width="500"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_11.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_11.pu" style="background: #FFFFFF;" height="400" width="500"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_12.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_12.pu" style="background: #FFFFFF;" height="400" width="500"></iframe>
+						</span>
+					</section>
+					<section>
+						<img src="sample_class_diag/sample_class_diag_12_1.png"/>
+						<span class="fragment">
+							<iframe src="sample_class_diag/sample_class_diag_12_1.pu" style="background: #FFFFFF;" height="400" width="500"></iframe>
+						</span>
+					</section>
+				</section>
+				
+				<section>
+					<h1>Questions</h1>
+					<p>... elles sont les très bienvenues </p>
+				</section>
+
+				<section>
+					<h2>Merci<br/><br/></h2>
+
+					<small>Vous souhaitez récupérer ces slides : Nicolas.Bossard@orange.com</small>
+
+				</section>
+
+				<section>
+					Références :
+					<ul>
+						<li>http://www.commentcamarche.net/contents/1139-caracteristiques-d-uml</li>
+						<li>http://uml.free.fr/cours/i-p19.html</li>
+					</ul>
+				</section>
+				
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
