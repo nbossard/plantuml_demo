@@ -1,0 +1,19 @@
+@startuml
+
+    title Aide mémoire for (Plant)UML, diagramme de cas d'utilisation
+
+
+    :Un acteur: as Alice
+    note right of Alice : <b>Un acteur</b>\n c'est l'idéalisation d'un rôle joué par une personne externe\nou une chose qui interagit avec un système.\nSyntaxe :\n<i>:Un Acteur:</i>
+
+    rectangle "système et sa frontière" {
+        (Faire qque chose)
+        note right of (Faire qque chose) : <b>Un cas d'utilisation</b>\nreprésente une fonctionnalité visible de l'extérieur.\nSyntaxe :\n<i>(Un usecase)</i>
+        note bottom of (Faire qque chose) : Un verbe à l'infinitif
+    }
+
+    Alice -- (Faire qque chose)
+    Note on link : <b>relation d'association</b>\nun chemin de communication entre un acteur et un cas d'utilisation.\nSyntaxe :\n<i>Alice -- (Faire qque chose)</i>
+@enduml
+
+http://stackoverflow.com/questions/31975109/android-class-diagram-uml

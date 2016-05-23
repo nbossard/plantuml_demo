@@ -1,0 +1,10 @@
+@startuml
+    Title utilisation de packlist
+    :Alice:
+    :Mail:
+    rectangle packlist {
+        (ajouter un item à sa liste)
+        (consulter sa liste des items)
+        (envoyer sa liste des items)
+    }
+@enduml
