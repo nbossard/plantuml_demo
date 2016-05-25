@@ -1,0 +1,11 @@
+@startuml
+    Title packlist modèle de données
+    class liste {
+        nom : string
+    }
+    class item {
+        nom : string
+        poids : int
+        packed : boolean
+    }
+@enduml
