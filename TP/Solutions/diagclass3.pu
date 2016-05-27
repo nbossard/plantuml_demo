@@ -8,4 +8,10 @@
         poids : int
         packed : boolean
     }
+
+    liste "1" *-- "*" item
+
+    legend
+        new : mise en place des propriétés de classes
+    endlegend
 @enduml

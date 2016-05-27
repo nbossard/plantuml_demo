@@ -1,0 +1,30 @@
+@startuml
+    Title packlist modèle de données
+    class liste {
+        - nom : string
+        --
+        + getNom()
+        + setNom()
+        + addItem()
+        .. other methods ..
+        + getTotalPoids()
+        + getPoidsEmpaquete()
+    }
+    class item {
+        - nom : string
+        - poids : int
+        - packed : boolean
+        + getNom()
+        + setNom()
+        + getPoids()
+        + setPoids()
+        + isPacked()
+        + setPacked()
+    }
+
+    liste "1" *-- "*" item
+
+    legend
+        new : ajout de méthodes supplémentaires
+    endlegend
+@enduml

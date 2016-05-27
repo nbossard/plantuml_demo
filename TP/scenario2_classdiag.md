@@ -1,4 +1,6 @@
-#scenario description textuelle :
+# TP2 : Ecriture d'un diagramme de classe
+
+## Scénario, description textuelle :
 
 
     > Un utilisateur principal (appelons le Alice) veut créer une liste d'objets à emporter en weekend.
@@ -7,18 +9,19 @@
 
     > les propriétés des items sont typées (string ou int ou boolean)
 
-    > Ces objets sont des Java Bean
+    > Ces objets sont des JavaBean (il faut des getters et des setters)
 
     > La liste a des méthodes permettant d'ajouter un item et de récupérer le poids total
 
+## Travail à réaliser
 
 Décrire le cas modèle de données en UML, papier ou schéma plantuml. se référer au fichier memo_uml.pu
 
-Ressources pour ce faire :
+## Ressources pour ce faire :
 
-* exemple
-* Bonne doc sur les cas d'utilisations, http://laurent-audibert.developpez.com/Cours-UML/?page=diagramme-cas-utilisation
+* aide mémoire
 
-Etapes :
+## Etapes conseillées :
 
 0. Modéliser les objets du sytème
+1. Ajouter les propriétés

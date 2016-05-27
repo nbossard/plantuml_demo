@@ -1,0 +1,14 @@
+@startuml
+    Title packlist modèle de données
+
+    class liste {
+    }
+    class item {
+    }
+
+    liste "1" *-- "*" item
+
+    legend
+        new : mise en place des relations entre classes
+    endlegend
+@enduml

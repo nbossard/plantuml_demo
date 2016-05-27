@@ -1,0 +1,10 @@
+@startuml
+    Title packlist modèle de données
+
+    class liste
+    class item
+
+    legend
+        new : mise en place des classes
+    endlegend
+@enduml

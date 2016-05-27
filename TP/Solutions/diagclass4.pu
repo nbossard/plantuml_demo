@@ -1,0 +1,25 @@
+@startuml
+    Title packlist modèle de données
+    class liste {
+        nom : string
+        getNom()
+        setNom()
+    }
+    class item {
+        nom : string
+        poids : int
+        packed : boolean
+        getNom()
+        setNom()
+        getPoids()
+        setPoids()
+        isPacked()
+        setPacked()
+    }
+
+    liste "1" *-- "*" item
+
+    legend
+        new : mise en place des getters / setters
+    endlegend
+@enduml

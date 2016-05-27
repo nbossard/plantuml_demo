@@ -1,0 +1,43 @@
+@startuml
+
+    title Aide mémoire for (Plant)UML, diagramme de classe
+
+    start
+
+    :action simple;
+    :entrée (formalisme SDL)<
+    :sortie (formalisme SDL)>
+
+    if (un test) then (oui)
+      :youpi;
+    elseif (un autre test) then (oui)
+      :super;
+    else (non)
+      :sniff;
+      stop
+    endif
+    note right
+        syntaxe :
+         if (un test) then (oui)
+         else (non)
+         endif
+    end note
+
+
+    while (toujours vrai?) is (vrai)
+      :faire qque chose;
+      :puis une autre;
+    endwhile (faux)
+
+    note right
+        syntaxe :
+         while (toujours vrai?)
+           :faire qque chose;
+           :puis une autre;
+         endwhile
+    end note
+
+    end
+
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+    Title Diagramme d'activité calcul poids empaqueté
+
+    start
+        while (il y a des item) is (encore)
+            : ajouter le poids... si il y en a un et qu'il est empaqueté;
+        endwhile (fini)
+    end
+
+@enduml
