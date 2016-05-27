@@ -1,4 +1,4 @@
-@startuml
+@startuml memo_uml_class.pu
 
     title Aide mémoire for (Plant)UML, diagramme de classe
 
