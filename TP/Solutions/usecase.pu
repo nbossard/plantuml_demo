@@ -1,5 +1,6 @@
 @startuml
     Title utilisation de packlist
+
     :Alice: <<principal>>
     :Mail: <<secondaire>>
     rectangle packlist {

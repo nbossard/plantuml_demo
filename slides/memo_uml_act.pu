@@ -4,9 +4,15 @@
 
     start
 
-    :action simple;
-    :entrée (formalisme SDL)<
-    :sortie (formalisme SDL)>
+    partition "groupe d'actions" {
+        note right : syntaxe : \n partition "groupe" {\n}
+        :action simple;
+        note right : syntaxe : \n :action simple;
+        :entrée (formalisme SDL)<
+        note right : syntaxe : \n :action simple<
+        :sortie (formalisme SDL)>
+        note right : syntaxe : \n :action simple>
+    }
 
     if (un test) then (oui)
       :youpi;

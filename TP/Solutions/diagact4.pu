@@ -7,4 +7,7 @@
         endwhile (fini)
     end
 
+    legend
+        new : ajout de la boucle principale
+    endlegend
 @enduml

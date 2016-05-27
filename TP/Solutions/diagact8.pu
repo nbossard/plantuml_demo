@@ -1,0 +1,24 @@
+@startuml
+    Title Diagramme d'activité calcul poids empaqueté
+
+    |liste|
+    start
+        :packedwheight = 0;
+        while (il y a des item) is (encore)
+            |item|
+            partition getItemPackedWeight{
+                if (cet item a un poids ?) then (oui)
+                    if (empaqueté ?)  then (oui)
+                        : Ajouter poids à packedWeight;
+                    endif
+                else (non)
+                endif
+            }
+            |liste|
+        endwhile (fini)
+    end
+
+    legend
+        new : ajout de swimlane
+    endlegend
+@enduml

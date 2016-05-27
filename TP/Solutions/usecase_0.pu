@@ -5,4 +5,9 @@
     :Mail:
     rectangle packlist {
     }
+
+    legend
+        Modélisation des acteurs et de la frontière du système
+    endlegend
+
 @enduml

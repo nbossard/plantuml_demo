@@ -15,4 +15,8 @@
 
         (envoyer sa liste des items) --> :Mail:
     }
+
+    legend
+        NEW : on consulte la liste avant de l'envoyer
+    endlegend
 @enduml

@@ -12,4 +12,8 @@
             endif
         endwhile (fini)
     end
+
+    legend
+        new : ajout des tests
+    endlegend
 @enduml

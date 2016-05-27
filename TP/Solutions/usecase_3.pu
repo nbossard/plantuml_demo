@@ -13,4 +13,8 @@
         Alice --> (envoyer sa liste des items)
         (envoyer sa liste des items) --> :Mail:
     }
+
+    legend
+        définir les associations entre acteurs et cas d'utilisation
+    endlegend
 @enduml

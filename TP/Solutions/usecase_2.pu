@@ -8,4 +8,8 @@
         (consulter sa liste des items)
         (envoyer sa liste des items)
     }
+
+    legend
+        tagger les acteurs comme principal et secondaire
+    endlegend
 @enduml
