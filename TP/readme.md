@@ -15,7 +15,7 @@
 - prévoir un gros bloc et un bon crayon
 
 ## Travaux préparatoire (pour ceux qui souhaitent bosser sur ordinateur avec plantuml) :
- - récupérer le projet  sur github.com https://github.com/nbossard/plantuml_demo/branches
+ - récupérer le projet  sur github.com https://github.com/nbossard/plantuml_demo
  - installer et lancer une fois le jar de plantuml : http://fr.plantuml.com/download.html
  - prévoir un bon éditeur de texte (notepad++, atom ...)
 
