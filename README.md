@@ -11,3 +11,8 @@ Pour les visualiser récupérez le projet sur votre poste local puis ouvrez dans
 
     slides/index_retour_sources.html
     
+Images manquantes : certains schémas plantUML ne sont pas archivés dans le repo git et doivent être regénérés. 
+Pour regénérer tous les schémas du projet, utilisez la commande suivante dans une console à la racine du projet: 
+
+    java -jar plantuml.jar "./**.pu"
+    
